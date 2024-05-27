@@ -105,7 +105,6 @@ class NSGT:
 class CQ_NSGT(NSGT):
     def __init__(self, fmin, fmax, bins, fs, Ls, real=True, matrixform=False, reducedform=0, multichannel=False, measurefft=False, multithreading=False):
         assert fmin > 0
-        assert fmax > fmin
         assert bins > 0
         
         self.fmin = fmin
